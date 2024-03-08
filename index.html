@@ -19,7 +19,7 @@
 
 <body>
   <div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
       <div class="container-fluid">
         <a class="navbar-brand my-logo" href="index.html">VIRIDI</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -32,18 +32,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0  nav-underline">
             <li class="nav-item">
-              <a class="nav-link active mx-4" href="index.html">Home</a>
+              <a class="nav-link active mx-1" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-4" href="about.html">About</a>
+              <a class="nav-link mx-1" href="about.html">About</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle mx-4" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 More
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Login</a></li>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
                 <li><a class="dropdown-item" href="#">Signup</a></li>
                 <li>
                   <hr class="dropdown-divider">
@@ -93,6 +93,57 @@
     </div>
 
     <!-- Carousel Ends here -->
+
+    <!-- cards components starts here -->
+    <div class="container-fluid my-5">
+
+      <div id="cards" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4  g-4 mx-auto">
+        <div class="col">
+          <a id="card" href="#" class="card h-100 text-decoration-none" style="max-width: 20rem;">
+            <img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw1888ad40/images/Titan/Catalog/1805QM01_1.jpg?sw=360&sh=360" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Category</p>
+              <div class="card-title" >&#8377;100  &nbsp; <span class="text-decoration-line-through text-danger"> &#8377;2200</span></div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="card h-100 text-decoration-none" style="max-width: 20rem;">
+            <img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw1888ad40/images/Titan/Catalog/1805QM01_1.jpg?sw=360&sh=360" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card-title" >&#8377;100  &nbsp; <span class="text-decoration-line-through text-danger"> &#8377;2200</span></div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="card h-100 text-decoration-none" style="max-width: 20rem;">
+            <img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw1888ad40/images/Titan/Catalog/1805QM01_1.jpg?sw=360&sh=360" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card-title" >&#8377;100  &nbsp; <span class="text-decoration-line-through text-danger"> &#8377;2200</span></div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="card h-100 text-decoration-none" style="max-width: 20rem;">
+            <img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw1888ad40/images/Titan/Catalog/1805QM01_1.jpg?sw=360&sh=360" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card-title" >&#8377;100  &nbsp; <span class="text-decoration-line-through text-danger"> &#8377;2200</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- cards components ends here -->
+
 
   </div>
 
@@ -221,6 +272,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>
