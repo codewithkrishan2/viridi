@@ -1,3 +1,6 @@
+const BASE_URL = ''
+
+
 const url = "http://localhost:8080/api/v1/product/all";
 
 const fetchData = async ()=>{
@@ -13,6 +16,7 @@ const fetchData = async ()=>{
 
 //Function to render data in cards
 const randerData = async ()=>{
+    
     const cards = document.querySelector("#cards");
     const data = await fetchData();
 
@@ -70,8 +74,6 @@ const randerData = async ()=>{
             col.appendChild(card);
 
             cards.appendChild(col);
-
-
 
         });
     }

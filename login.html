@@ -242,8 +242,6 @@
 
     const loginForm = document.getElementById("loginForm");
 
-    console.log(email, password);
-
     loginForm.addEventListener("submit",
       async (event) => {
         event.preventDefault();
@@ -258,9 +256,10 @@
 
         const result = await response.json();
 
-        console.log(result)
+        //console.log(result)
         // Check if login was successful
-        if (response.ok) {
+        try {
+          if (response.ok) {
           const { token, user } = result;
 
           // Store the token in localStorage for future requests
@@ -272,7 +271,8 @@
           } else {
             window.location.href = "index.html";
           }
-        } else {
+        } 
+        } catch (error) {
           // Handle login error
           alert("Login failed. Please check your credentials.");
         }
