@@ -23,9 +23,11 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="admin-dashboard.html">Admin-Dashboard</a>
         <a href="products.html">Products</a>
         <a href="addproduct.html">Add Product</a>
         <a href="users.html">Users</a>
+        <a href="orders.html">Orders</a>
         <a href="#">Logout</a>
     </div>
 
@@ -35,9 +37,40 @@
     </span>
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <main id="main">
-        
+
         <div class="container-fluid">
-           <p>Welcome admin</p>
+            <p>Welcome admin</p>
+            <p>Products:</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th id="id" scope="col">Id</th>
+                                <th id="name" scope="col">Name</th>
+                                <th id="price" scope="col">Prce</th>
+                                <th id="discountedPrice" scope="col">DiscountedPrice</th>
+                                <th id="category" scope="col">Category</th>
+                                <th id="quantity" scope="col">Quantities</th>
+                                <th id="action" scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, voluptatum.</td>
+                                <td>5050</td>
+                                <td>3000</td>
+                                <td>10</td>
+                                <td>Man</td>
+                                <td><button>edit</button><button>delete</button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
