@@ -23,9 +23,9 @@ fetch(url)
     .then(data => {
         id.innerHTML = data.id;
         pname.innerHTML = data.name;
-        price.innerHTML = "MRP Rs. "+data.price;
+        price.innerHTML = "MRP Rs. " + data.price;
         //let discountedPrice = 
-        discountedPrice.innerHTML = "Offer Price Rs. "+data.discountedPrice;
+        discountedPrice.innerHTML = "Offer Price Rs. " + data.discountedPrice;
         description.innerHTML = data.description;
         image.src = data.images[0];
     })

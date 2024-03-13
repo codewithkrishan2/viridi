@@ -3,7 +3,7 @@ const BASE_URL = ''
 
 const url = "http://localhost:8080/api/v1/product/all";
 
-const fetchData = async ()=>{
+const fetchData = async () => {
 
     try {
         const response = await fetch(url);
