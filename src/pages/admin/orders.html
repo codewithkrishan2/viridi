@@ -38,10 +38,56 @@
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <main id="main">
         
+        
         <div class="container-fluid">
-           <p>Dashboard</p>
+            <p>Welcome admin</p>
+            <p>Orders</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <table class="table table-secondary  table-striped"  >
+                            <thead>
+                                <tr>
+                                    <th id="id" scope="col">Id</th>
+                                    <th id="trackingId" scope="col">Tracking ID</th>
+                                    <th id="orderDate" scope="col">Order Date</th>
+                                    <th id="totalAmount" scope="col">Total Amount</th>
+                                    <th id="status" scope="col">Status</th>
+                                    <th id="cartItems" scope="col">Cart Items</th>
+                                    <th id="action" scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablebody">
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>123456</td>
+                                    <td>2024-03-12</td>
+                                    <td>$100.00</td>
+                                    <td>
+                                        <select>
+                                            <option value="processing">Processing</option>
+                                            <option value="shipped">Shipped</option>
+                                            <option value="delivered">Delivered</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Product 1 - $50.00</li>
+                                            <li>Product 2 - $30.00</li>
+                                            <li>Product 3 - $20.00</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <button>edit</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        
     </main>
 
 
@@ -50,6 +96,9 @@
     </script> -->
 
     <script src="../../js/admin-script.js"></script>
+    <script src="../../js/orders.js"></script>
+    
+
 </body>
 
 </html>
