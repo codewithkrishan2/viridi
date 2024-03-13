@@ -17,29 +17,35 @@
 
 <body>
   <div class="containerfluid">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
       <div class="container-fluid">
-        <a class="navbar-brand my-logo" href="#">VIRIDI</a>
+        <a class="navbar-brand my-logo" href="../../../index.html">VIRIDI</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="d-flex justify-content-center flex-grow-1 me-auto"> <!-- Center the search box -->
+          <input class="form-control" type="search" placeholder="Search Products..." aria-label="Search">
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0  nav-underline">
             <li class="nav-item">
-              <a class="nav-link active mx-4" aria-current="page" href="#">Home</a>
+              <a class="nav-link active mx-1" href="../../../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  mx-4" href="about.html">About</a>
+              <a class="nav-link mx-1" href="../../../about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="../user/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle  mx-4" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 More
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/login.html">Login</a></li>
-                <li><a class="dropdown-item" href="#">Signup</a></li>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="../../../login.html">Login</a></li>
+                <li><a class="dropdown-item" href="../../../register.html">Signup</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -47,10 +53,6 @@
               </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -66,6 +68,10 @@
       <div class="mb-3">
         <label for="productDescription" class="form-label">Product Description</label>
         <textarea class="form-control" id="productDescription" rows="3" placeholder="Enter product description"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="productDetail" class="form-label">Product Details</label>
+        <textarea class="form-control" id="productDetail" rows="3" placeholder="Enter product detail"></textarea>
       </div>
       <div class="mb-3">
         <label for="productPrice" class="form-label">Product Price</label>
