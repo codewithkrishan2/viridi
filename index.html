@@ -262,6 +262,27 @@
     crossorigin="anonymous"></script>
 
   <script src="src/js/index.js"></script>
+
+  <script>
+    
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const response = await fetch("https://api.example.com/products");
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const data = await response.json();
+        const cardsContainer = document.getElementById("cards");
+        cardsContainer.innerHTML = ""; // Clear existing content
+        data.forEach(product => {
+          const card = ``;
+          cardsContainer.insertAdjacentHTML("beforeend", card);
+        });
+      } catch (error) {
+        console.error("Error fetching and populating data:", error);
+      }
+    });
+  </script>
 </body>
 
 </html>
