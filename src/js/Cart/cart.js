@@ -4,7 +4,7 @@ const productId = document.getElementById('id');
 const url = `localhost:8080/api/v1/cart/add`
 // Add new Product to the list  
 // Get the JWT token from local storage
-const token = localStorage.getItem('jwtToken');
+const token = localStorage.getItem('token');
 
 // If the token exists, parse it to get the user ID
 if (token) {
